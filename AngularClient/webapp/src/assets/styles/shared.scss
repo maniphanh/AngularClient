@@ -1,0 +1,35 @@
+.custom-button {
+    background-color: #0c4160;
+    color: white;
+  
+    &:hover {
+        background-color: #738fa7;
+    }
+  
+    &:disabled, // Works for <button disabled>
+    &[disabled] { // Ensures Material components respect the disabled state
+        background-color: #b0b0b0 !important; // Gray out the button
+        color: #ffffff !important; // Keep text visible but muted
+        cursor: not-allowed;
+        opacity: 0.6;
+        box-shadow: none; // Remove shadow to indicate disabled state
+    }
+}
+
+.custom-button-dark {
+    background-color: #071330;
+    color: white;
+  
+    &:hover {
+        background-color: #738fa7;
+    }
+  
+    &:disabled, // Works for <button disabled>
+    &[disabled] { // Ensures Material components respect the disabled state
+        background-color: #b0b0b0 !important; // Gray out the button
+        color: #ffffff !important; // Keep text visible but muted
+        cursor: not-allowed;
+        opacity: 0.6;
+        box-shadow: none; // Remove shadow to indicate disabled state
+    }
+}

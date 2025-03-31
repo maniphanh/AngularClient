@@ -1,0 +1,99 @@
+
+mat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 64px;
+    background-color: #36454F;
+    color: white;
+  }
+  
+  .app-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1; // Pushes navigation to the right
+  }
+  
+  /* Desktop Navigation */
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white !important;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  /* Highlight active link */
+  .active-link {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-menu {
+    display: none;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .mat-drawer-container {
+        display: inline;
+    }
+
+    .mdc-list {
+        height: auto !important;
+    }
+
+    .nav-links {
+      display: none; // Hide horizontal links on small screens
+    }
+  
+    .mobile-menu {
+      display: block; // Show mobile menu button
+      color: white;
+    }
+  }
+.sidenav-container
+{
+  overflow-x: auto;
+}
+  .main-window {
+    min-width: 2100px;
+    overflow-x: auto;
+  }
+  /* Ensure mat-sidenav fills full height */
+mat-sidenav {
+    height: 100%;
+  }
+  
+  /* Ensure the nav list takes up full height */
+  mat-nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items in full height */
+  }
+  
+  /* Ensure each menu item takes up space properly */
+  mat-list-item,
+  a[mat-list-item] {
+    width: 100%;
+    padding: 20px 16px; /* Increase padding for better tap area */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px; /* Adjust font size for better visibility */
+  }
+  
+  /* Optional: Highlight active link */
+  a[mat-list-item].active-link {
+    background-color: rgba(255, 255, 255, 0.1); /* Light highlight */
+  }
+  

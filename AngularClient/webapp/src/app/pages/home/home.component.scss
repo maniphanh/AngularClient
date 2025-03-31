@@ -1,0 +1,14 @@
+
+@import '../../../assets/styles/shared.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 768px) {
+    .bottom-left-section, .bottom-right-section {
+      flex: 0 0 100%; /* Full width for both */
+    }
+}
